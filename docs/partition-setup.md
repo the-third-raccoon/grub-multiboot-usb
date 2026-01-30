@@ -77,7 +77,7 @@ Note that if you have multiple Windows ISOs, you will need to create separate pa
 ### Create the (Linux) ISO Partition
 Linux ISO files will be placed in this partition. The size of this partition may span the remaining available space.
 
-Unlike Windows ISOs, Linux ISOs can usually be chainloaded directly without extraction. As such, we can easily store multiple ISO files within the same partition.
+Unlike Windows, Linux ISOs can usually be booted directly from the ISO file using GRUB2 loopback (without extraction). As such, we can easily store multiple ISO files within the same partition.
 1. Select the unallocated space, then select **Partition > New**.
 2. Leave the size as default (or set to a desired size), create as `Primary Partition`, and set the file system to `ext4`. I will use `ISO` for the label and partition name. Click **Add**.
 

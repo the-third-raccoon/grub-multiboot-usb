@@ -3,7 +3,7 @@
 This section describes how to prepare a Windows installer so it can be booted by GRUB2.
 > **Additional Notes**
 >   - This example uses `Win11_25H2_English_x64.iso`.
->   - Windows ISOs cannot be chainloaded directly with GRUB2. Instead, the contents of the ISO must be extracted and GRUB2 must chainload the Windows EFI binary.
+>   - Windows ISOs cannot be booted using GRUB2 loopback. Instead, the contents of the ISO must be extracted and GRUB2 must chainload the Windows EFI binary.
 >   - The FAT32 file system has a maximum file size of 4 GB. Since `install.wim` (a file in the Windows ISO) usually exceeds this limit, it must be split into multiple `.swm` files. 
 
 ### Mount the ISO File and the USB Partition
